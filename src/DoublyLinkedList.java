@@ -1,10 +1,10 @@
 /**
  * Your implementation of a non-circular DoublyLinkedList with a tail pointer.
  *
- * @author YOUR NAME HERE
+ * @author Minjun Kim
  * @version 1.0
- * @userid YOUR USER ID HERE (i.e. gburdell3)
- * @GTID YOUR GT ID HERE (i.e. 900000000)
+ * @userid mkim925
+ * @GTID 903873051
  *
  * Collaborators: LIST ALL COLLABORATORS YOU WORKED WITH HERE
  *
