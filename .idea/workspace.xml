@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9d42ef6-03eb-4739-82f4-de799a031402" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c9d42ef6-03eb-4739-82f4-de799a031402" name="Changes" comment="initial">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoublyLinkedList.java" afterDir="false" />
     </list>
@@ -33,7 +32,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DoublyLinkedListStudentTest">
     <configuration name="DoublyLinkedListStudentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HW2_ArrayLists" />
       <option name="PACKAGE_NAME" value="" />
@@ -43,9 +42,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DoublyLinkedListStudentTest.testRemoveAtIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW2_ArrayLists" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DoublyLinkedListStudentTest" />
+      <option name="METHOD_NAME" value="testRemoveAtIndex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DoublyLinkedListStudentTest" />
+        <item itemvalue="JUnit.DoublyLinkedListStudentTest.testRemoveAtIndex" />
       </list>
     </recent_temporary>
   </component>

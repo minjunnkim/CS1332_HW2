@@ -112,24 +112,37 @@ public class DoublyLinkedList<T> {
             throw new IndexOutOfBoundsException("Index must be within the DoublyLinkedList's bounds.");
         }
 
-        DoublyLinkedListNode<T> current = getNodeAtIndex(index);
-        DoublyLinkedListNode<T> previous = current.getPrevious();
-        DoublyLinkedListNode<T> next = current.getNext();
+        DoublyLinkedListNode<T> current;
 
         if (size == 1) {
             // Removing the only element in the list.
+            current = head;
+
             head = null;
             tail = null;
         } else if (index == 0) {
             // Removing the first element.
-            next.setPrevious(null);
-            head = next;
+
+            current = head;
+
+            DoublyLinkedListNode<T> newHead = head.getNext();
+            newHead.setPrevious(null);
+            head = newHead;
+
         } else if (index == size - 1) {
             // Removing the last element.
-            previous.setNext(null);
-            tail = previous;
+
+            current = tail;
+
+            DoublyLinkedListNode<T> newTail = tail.getPrevious();
+            newTail.setNext(null);
+            tail = newTail;
+
         } else {
             // Removing an element in the middle.
+            current = getNodeAtIndex(index);
+            DoublyLinkedListNode<T> previous = current.getPrevious();
+            DoublyLinkedListNode<T> next = current.getNext();
             previous.setNext(next);
             next.setPrevious(previous);
         }
