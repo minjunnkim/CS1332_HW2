@@ -252,13 +252,26 @@ public class DoublyLinkedList<T> {
             throw new java.util.NoSuchElementException("List is empty");
         }
 
+        /**
+         * I wrote this if statement to make it visually obvious that this method is O(1) when data is in the tail.
+         * I acknowledge that this if statement is redundant as the while statement below includes this case and
+         * it would still be O(1) in the case where the tail contains the data. There would be no harm done
+         * even if we removed this if statement.
+         */
+        if(tail.getData().equals(data)) {
+            return removeAtIndex(size - 1);
+        }
+
         DoublyLinkedListNode<T> current = tail;
+        int counter = 0;
         while (current != null) {
             if (current.getData().equals(data)) {
-                return removeAtIndex(indexOfFromBack(data));
+                return removeAtIndex(size-1-counter);
             }
             current = current.getPrevious();
+            counter++;
         }
+
 
         throw new java.util.NoSuchElementException("Data not found");
     }
@@ -339,22 +352,5 @@ public class DoublyLinkedList<T> {
             }
         }
         return current;
-    }
-
-    private int indexOfFromBack(T data) {
-        DoublyLinkedListNode<T> current;
-        current = tail;
-
-        int index = 0;
-        while (current != null) {
-            if (current.getData().equals(data)) {
-                return index;
-            }
-
-            current = current.getPrevious();
-            index++;
-
-        }
-        return -1;
     }
 }
